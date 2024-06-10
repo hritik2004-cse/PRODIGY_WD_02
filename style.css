@@ -1,0 +1,141 @@
+/* font name : lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+nav{
+    background-color:#fff;
+    color: blueviolet;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 30px;
+    height: 10vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    height: 90vh;
+    width: 100%;
+}
+
+#box{
+    background-color: #fff;
+    color: blueviolet;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+#display{
+    border: 2px solid blueviolet;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+#control-items{
+    margin-top: 20px;
+}
+
+button{
+    margin: 5%;
+    padding: 3% 5%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#start-btn{
+    background-color:red;
+}
+
+#start-btn:hover{
+    background-color: rgb(183, 19, 19);
+}
+
+#pause-btn{
+    background-color:blue;
+}
+
+#pause-btn:hover{
+    background-color:rgb(17, 17, 152);
+}
+
+#reset-btn{
+    background-color: rgb(62, 224, 62);
+}
+#reset-btn:hover{
+    background-color: green;
+}
+
+@media screen and (max-width:1140px) {
+    button{
+        margin: 3%;
+    }
+    #box{
+        width: 50%;
+    }
+}
+@media screen and (max-width:730px) {
+    #box{
+        width: 60%;
+    }
+}
+@media screen and (max-width:600px) {
+    #box{
+        width: 70%;
+    }
+    nav{
+        font-size: 20px;
+    }
+} 
+@media screen and (max-width:520px) {
+    button{
+        margin: 2%;
+    }
+    #box{
+        width: 80%;
+    }
+} 
+@media screen and (max-width:450px) {
+    #display{
+        font-size: 30px;
+    }
+} 
+@media screen and (max-width:400px) {
+    button{
+        margin: 1%;
+    }
+    #box{
+        width: 95%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    nav{
+        text-align: center;
+    }
+} 
